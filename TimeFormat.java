@@ -7,7 +7,7 @@ public class TimeFormat {
 		if (hours<10) {
 			hours = hours%10;
 		}
-		if (hours>=12) {
+		if (hours>=13) {
 			pmOrAmStr = "PM";
 			hours = hours-12;
 		}
