@@ -6,6 +6,6 @@ public class Bill3 {
 		String name3 = args[2];
 		int value =Integer.parseInt(args[3]);
 		System.out.println("Dear "+name1+" "+name2+" "+name3+
-		                   " pay "+(value/3+1)+ " each");
+		                   " pay "+(Math.ceil(value/3))+ " each");
 	}
 }
