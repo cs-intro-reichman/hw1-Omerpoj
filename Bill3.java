@@ -5,7 +5,7 @@ public class Bill3 {
 		String name2 = args[1];
 		String name3 = args[2];
 		int value =Integer.parseInt(args[3]);
-		System.out.println("Dear "+name1+" "+name2+" "+name3+
-		                   " pay "+(Math.ceil(value/3)+1)+ " each");
+		System.out.println("Dear "+name3+" , "+name2+" , "+name1+
+		                   " pay :"+(Math.ceil(value/3))+ "Shekels each");
 	}
 }
