@@ -11,12 +11,11 @@ public class TimeFormat {
 			pmOrAmStr = "PM";
 			hours = hours-12;
 		}
-		if (minutes<10) {
+		if (minutes<10&&minutes!=0) {
 			System.out.println(hours+":"+"0"+minutes+" "+pmOrAmStr);
-			if (minutes==0) {
+		}if (minutes==0) {
 				System.out.println(hours+":"+minutes+minutes+" "+pmOrAmStr);
-			}
-	}
+		}
 		else{
         	System.out.println(hours+":"+minutes+" "+pmOrAmStr);
 		}
