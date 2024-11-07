@@ -7,13 +7,13 @@ public class TimeFormat {
 		if (hours<10) {
 			hours = hours%10;
 		}
-		if (hours>=13) {
+		if (hours>=12) {
 			pmOrAmStr = "PM";
 			hours = hours-12;
 		}
 		if (minutes<10&&minutes!=0) {
 			System.out.println(hours+":"+"0"+minutes+" "+pmOrAmStr);
-			if (minutes==00) {
+			if (minutes==0) {
 					System.out.println(hours+":"+minutes+minutes+" "+pmOrAmStr);
 			}
 		}
