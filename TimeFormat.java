@@ -13,8 +13,9 @@ public class TimeFormat {
 		}
 		if (minutes<10&&minutes!=0) {
 			System.out.println(hours+":"+"0"+minutes+" "+pmOrAmStr);
-		}if (minutes==0) {
-				System.out.println(hours+":"+minutes+minutes+" "+pmOrAmStr);
+			if (minutes==00) {
+					System.out.println(hours+":"+minutes+minutes+" "+pmOrAmStr);
+			}
 		}
 		else{
         	System.out.println(hours+":"+minutes+" "+pmOrAmStr);
